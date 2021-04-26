@@ -6,7 +6,7 @@
 
 @media only screen and (max-width: 700px) {
   .flex-container {
-    display: none;
+    /* display: none; */
   }
   h1 {
     transform: translate(220px, -100px);
@@ -18,6 +18,12 @@
     -ms-transform: scale(0.5);
     transform: scale(0.5);
   } */
+  .back-end {
+    display: none;
+  }
+  .devops {
+    display: none;
+  }
 }
 
 .shrink {
