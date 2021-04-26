@@ -1,6 +1,4 @@
-
-
-.flex-container{
+.flex-container {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -8,34 +6,31 @@
 
 @media only screen and (max-width: 700px) {
   .flex-container {
-    /* flex-direction: column; */
+    flex-direction: column;
   }
-  h1{
+  h1 {
     transform: translate(220px, -100px);
     z-index: -2;
-
-
   }
-  .shrink{
-    -webkit-transform:scale(0.5);
-    -moz-transform:scale(0.5);
-    -ms-transform:scale(0.5);
-    transform:scale(0.5);
+  .shrink {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
   }
 }
 
-
-.shrink{
-  -webkit-transform:scale(0.8);
-  -moz-transform:scale(0.8);
-  -ms-transform:scale(0.8);
-  transform:scale(0.8);
+.shrink {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .contents {
   width: 200px;
   height: 200px;
- margin:5% 5%;
+  margin: 5% 5%;
   position: relative;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
@@ -51,8 +46,6 @@
 
   -moz-transform-style: preserve-3d;
   -moz-animation: rotatecube 10s infinite;
-
-
 }
 
 #cube div {
@@ -65,13 +58,12 @@
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  border: 1.2mm outset rgba(45, 174, 176, .8);
-
+  border: 1.2mm outset rgba(45, 174, 176, 0.8);
 }
 
-h1{
-  margin-top:130%;
-  font-family: 'Montserrat', sans-serif;
+h1 {
+  margin-top: 130%;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 1.7rem;
   font-weight: bolder;
@@ -79,8 +71,6 @@ h1{
   text-align: center;
   white-space: nowrap;
   color: #2cadb0;
-
-
 }
 
 @-webkit-keyframes rotatecube {
@@ -129,41 +119,29 @@ h1{
 
 .front {
   background: white;
-
-
-
 }
 
 .back {
   background: white;
-
 }
 
 .right {
-  background:white;
-}
-
-  background:#fff;
-
-
+  background: white;
 }
 
 .top {
   background: #fff;
-
 }
 
-.left{
+.left {
   background: white;
 }
 
 .bottom {
-/*   background: #000; */
+  /*   background: #000; */
   background: white;
 
-/*   border: 4mm ridge rgba(170, 50, 220, .6); */
-
-
+  /*   border: 4mm ridge rgba(170, 50, 220, .6); */
 }
 
 #cube .front {
@@ -196,40 +174,44 @@ h1{
   -moz-transform: rotateX(-90deg) translateZ(100px);
 }
 
-.animated{
-  -webkit-animation-duration:1s;
-  animation-duration:1s;
-  -webkit-animation-fill-mode:both;
-  animation-fill-mode:both
-
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeInLeft{
-  0%{
-      opacity:0;
-      -webkit-transform:translateX(-200px);
-      transform:translateX(-200px)}
-  100%{
-      opacity:1;
-      -webkit-transform:translateX(0);
-      transform:translateX(0)
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
-@keyframes fadeInLeft{
-  0%{
-      opacity:0;
-      -webkit-transform:translateX(-200px);
-      -ms-transform:translateX(-200px);
-      transform:translateX(-200px)}
-  100%{
-      opacity:1;
-      -webkit-transform:translateX(0);
-      -ms-transform:translateX(0);
-      transform:translateX(0)
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 }
-.fadeInLeft{
-  -webkit-animation-name:fadeInLeft;
-  animation-name:fadeInLeft
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
 
+span {
+  visibility: hidden;
 }
