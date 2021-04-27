@@ -175,6 +175,7 @@ h1 {
   -moz-transform: rotateX(-90deg) translateZ(100px);
 }
 
+/* ANIMATED FADE IN FROM LEFT  */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -453,4 +454,7 @@ body {
 
 .invisible {
   visibility: visible;
+}
+
+.up {
 }
