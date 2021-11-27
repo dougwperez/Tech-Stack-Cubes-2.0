@@ -68,8 +68,9 @@
           new BABYLON.Vector3(0, 0, -0),
           scene
         );
-        camera.setPosition(new BABYLON.Vector3(0, 4, -25));
+        camera.setPosition(new BABYLON.Vector3(0, 4, -12));
         camera.attachControl(canvas, true);
+        camera.lowerRadiusLimit = camera.upperRadiusLimit = camera.radius;
 
         var light = new BABYLON.HemisphericLight(
           "light1",
